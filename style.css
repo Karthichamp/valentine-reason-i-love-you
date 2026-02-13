@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffafcc, #ffc8dd);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  border: none;
+  background: #c9184a;
+  color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #a4133c;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* STORY */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* LOVE BUTTON */
+.love-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  border: none;
+  background: white;
+  color: #c9184a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.love-btn:hover {
+  transform: scale(1.1);
+}
+
+#reasonText {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* COUNTDOWN */
+#timer {
+  font-size: 1.5rem;
+}
+
+/* FINAL */
+.final button {
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: none;
+  background: #fff;
+  color: #c9184a;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ANIMATIONS */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FLOATING HEARTS */
+.hearts::before {
+  content: "💖 💕 💘 💞 💓 💗";
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  font-size: 2rem;
+  animation: float 15s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes float {
+  0% { transform: translateY(-10%); }
+  100% { transform: translateY(110vh); }
+}
