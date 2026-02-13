@@ -18,10 +18,10 @@ hiddenElements.forEach(el => observer.observe(el));
 
 // Love Reasons
 const reasons = [
+  "You are my Cute Babyyyy",
+  "You are always cutie pie to me Baby",
   "You make my world brighter.",
   "Your smile melts my heart.",
-  "You believe in me when I doubt myself.",
-  "You are my peace and my adventure.",
   "Life feels right with you.",
   "You are my favorite person."
 ];
@@ -32,7 +32,7 @@ function showReason() {
 }
 
 // Countdown
-const targetDate = new Date("Feb 14, 2026 00:00:00").getTime();
+const targetDate = new Date("Feb 19, 2026 10:00:00").getTime();
 
 const timer = setInterval(function() {
   const now = new Date().getTime();
